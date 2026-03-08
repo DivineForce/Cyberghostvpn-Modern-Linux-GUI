@@ -12,6 +12,8 @@ It provides:
 - profile + settings persistence
 - direct `openvpn` process launch
 - server discovery through `cyberghostvpn` CLI parsing
+### Screenshots
+![screenshot1](screenshots/screenshot1.png)
 
 ## Credits
 
