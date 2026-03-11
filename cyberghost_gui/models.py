@@ -22,6 +22,8 @@ class Paths:
     cache_file: Path
     profiles_file: Path
     settings_file: Path
+    recents_file: Path
+    session_file: Path
     icon_file: Path
     flags_dir: Path
 
@@ -53,3 +55,29 @@ class Settings:
     default_server_type: str = "traffic"
     auto_reconnect: bool = True
     kill_switch: bool = False
+
+
+@dataclass
+class RecentEntry:
+    country_name: str
+    country_code: str
+    city: str
+    server: str
+    protocol: str = "UDP"
+    service: str = "openvpn"
+    server_type: str = "traffic"
+    last_used: float = 0.0
+
+
+@dataclass
+class ActiveSession:
+    pid: int
+    instance: str
+    protocol: str
+    service: str
+    country_name: str = "Unknown"
+    country_code: str = ""
+    city: str = ""
+    server_type: str = "traffic"
+    started_at: float = 0.0
+    source: str = "tracked"

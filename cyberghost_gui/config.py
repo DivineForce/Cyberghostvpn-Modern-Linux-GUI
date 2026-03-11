@@ -23,6 +23,8 @@ def build_paths() -> Paths:
         cache_file=cg / "server_cache.json",
         profiles_file=cg / "profiles.json",
         settings_file=cg / "ui_settings.json",
+        recents_file=cg / "recents.json",
+        session_file=cg / "active_session.json",
         icon_file=cg / "app_icon.png",
         flags_dir=cg / "flags",
     )

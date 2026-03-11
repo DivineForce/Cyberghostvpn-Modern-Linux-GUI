@@ -8,12 +8,10 @@
 CyberGhost Modern is a Linux desktop UI for connecting to CyberGhost OpenVPN endpoints.
 
 It provides:
-- a Tkinter GUI for country/city/server selection
+- a PySide6 (Qt) GUI for country/city/server selection
 - profile + settings persistence
 - direct `openvpn` process launch
 - server discovery through `cyberghostvpn` CLI parsing
-### Screenshots
-![screenshot1](screenshots/Screenshot1.png)
 
 ## Credits
 
@@ -68,8 +66,9 @@ Python packages:
 python3 -m pip install -r requirements.txt
 ```
 
-Current Python dependency:
+Current Python dependencies:
 - `Pillow`
+- `PySide6`
 
 ## Runtime Dependencies
 
