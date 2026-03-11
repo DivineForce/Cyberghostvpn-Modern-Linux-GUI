@@ -1,4 +1,4 @@
-﻿# CyberGhost Modern Client
+# CyberGhost Modern Client
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Platform](https://img.shields.io/badge/Platform-Linux-green)

@@ -29,7 +29,6 @@ from .store import (
 LogFn = Callable[[str], None]
 StatusFn = Callable[[str, str], None]
 
-
 class VpnService:
     def __init__(self, paths: Paths, logger: LogFn) -> None:
         self.paths = paths
@@ -233,7 +232,6 @@ class VpnService:
         if effective_service != "openvpn":
             on_line("WireGuard/service-type UI is present, but custom direct connection remains OpenVPN-based in this build.")
             effective_service = "openvpn"
-
         with self._proc_lock:
             running_proc = self.proc if self.proc and self.proc.poll() is None else None
             running_session = self._session_id if running_proc else None
