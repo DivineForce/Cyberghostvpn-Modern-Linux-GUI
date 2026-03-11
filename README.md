@@ -13,6 +13,9 @@ It provides:
 - direct `openvpn` process launch
 - server discovery through `cyberghostvpn` CLI parsing
 
+## Screenshots
+![screenshot](/screenshots/Screenshot1.png)
+
 ## Credits
 
 This project is inspired by community work:
